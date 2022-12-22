@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <title>My Portfolio</title>
+
+    <style>
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            
+        }
+    </style>
+    
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+        <a class="navbar-brand" href="#">Chiru Sandeep Paleti</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#employment-history">Employment History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#details">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#links">Links</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#languages">Languages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hobbies">Hobbies</a>
+                </li>
+                
+            </ul>
+        </div>
+        <a href="https://github.com/chirusandeep/Resume/raw/main/Chiru_Sandeep_Paleti_-_Software_Test_Automation_Engineer%20(9).pdf" class="btn btn-primary">Download Resume</a>
+    </nav>
+    <script>
+        const navLinks = document.querySelectorAll(".navbar a");
+      
+        navLinks.forEach((link) => {
+          link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const targetId = event.target.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+            window.scrollTo({
+              top: targetElement.offsetTop - 70, // Adjust for the height of the Navbar
+              behavior: "smooth"
+            });
+          });
+        });
+      </script>
+    <!-- Profile -->
+    <div class="container mt-5" id="profile">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="https://avatars.githubusercontent.com/u/32004793?s=400&u=1149145c63525080b4824f22e037a57360cfcccc&v=4" alt="Profile Picture" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-9 mt-5">
+                <h3>Chiru Sandeep Paleti</h3>
+                <p>Having experience of 1.5 Years with HCL Technologies proven efficiency with an ability to
+                    quickly learn and navigate any computer software program, or office filing system. Adept
+                    in carefully diagnosing and assessing issues, and offering real viable solutions. Skilled in
+                    Develop and testing.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Employment History -->
+    <div class="container mt-5" id="employment-history">
+        <h2>Employment History</h2>
+        <div class="accordion" id="employmentAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Software Engineer (Intern), HCL Technologies (May 2021 — Nov 2021)
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#employmentAccordion">
+                    <div class="card-body">
+                        <p>Worked to remain punctual, reliable, and flexible.
+                            Brought forth the ability to work well independently and also with others.
+                            Served as a dedicated and supportive Intern in a fast-paced environment.
+                            Recorded meeting notes and distributed them to supervisors and employees as
+                            directed. During the span of the internship, we made a project end-to-end "Password
+                            Manager" for HCL-Lites. I have played a vital role in back-end and automation testing.
+                            We had specific requirements from the client.
+                            The day we were excited, interacted with clients and they felt very happy on the
+                            occasion of project submission. It is Open Source now.
+                            <a href="https://github.com/chirusandeep/Password-Manager" target="_blank">HCL Password Manager</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Software Engineer, HCL Technologies (Nov 2021 — Oct 2022)
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#employmentAccordion">
+                    <div class="card-body">
+                        <p>Started working on project ING Banking from the roots of Sydney, Australia.
+                            Agile methodology has been used in the workplace. Where my real job started with
+                            advanced technologies in Selenium Automation. Got things gathered with team collaboration built the Automation Framework, Unit Test cases and kafka services to maintain regions where hosted into servers.
+                            This project helped me with challenging and excited tasks been performed everyday to gain more knowledge and strengthen my skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="container mt-5" id="education">
+        <h2>Education</h2>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Sri Gurudatta High School, SSC (Class X) - 7.8 CGPA
+                <span class="badge badge-primary badge-pill">Jul 2012 — May 2013</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Sri Chaitanya Jr. College, Intermediate (Class XI - XII) - 78 Percentage
+                <span class="badge badge-primary badge-pill">May 2013 — Jun 2015</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Rise Krishna Sai Prakasam Institue of Technologies (Aff. JNTUK), B. Tech
+(C.S.E) - 68 Percentage
+                <span class="badge badge-primary badge-pill">Jun 2015 — May 2019</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Details -->
+    <div class="container mt-5" id="details">
+        <h2>Details</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Location: Ongole, AP</li>
+            <li class="list-group-item">Phone: +91 83175 05038</li>
+            <li class="list-group-item">Email: chirusandeep451@gmail.com</li>
+        </ul>
+    </div>
+
+    <!-- Links -->
+    <div class="container mt-5" id="links">
+        <h2>Links</h2>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                
+                <a href="https://www.linkedin.com/in/chiru-sandeep-paleti/" target="_blank"><i class="fab fa-linkedin">LinkedIn</i></a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                
+                <a href="https://github.com/chirusandeep/" target="_blank"><i class="fab fa-github">GitHub</i></a>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                
+                <a href="https://www.chirusandeep.com" target="_blank"><i class="fas fa-link">Personal Website</i></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Certifications -->
+    <div class="container mt-5" id="certifications">
+        <h2>Certifications</h2>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                
+                <a href="https://www.lambdatest.com/certified/TNG-GVHRBU" target="_blank">Certified on TestNG</a>
+                <span class="badge badge-primary badge-pill">Dec 2021</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                
+                <a href="https://www.lambdatest.com/certified/SCS-F6GOHN" target="_blank">Certified on Selenium C# 101</a>
+                <span class="badge badge-primary badge-pill">Dec 2021</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="container mt-5" id="skills">
+        <h2>Skills</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Technical Skills</h4>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Java
+                        <span class="badge badge-primary badge-pill">8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Python
+                        <span class="badge badge-primary badge-pill">7</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Selenium
+                        <span class="badge badge-primary badge-pill">6</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Cucumber
+                        <span class="badge badge-primary badge-pill">8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        HTML + CSS + JavaScript
+                        <span class="badge badge-primary badge-pill">7</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>Soft Skills</h4>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Communication
+                        <span class="badge badge-primary badge-pill">9</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Problem Solving
+                        <span class="badge badge-primary badge-pill">8</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Teamwork
+                        <span class="badge badge-primary badge-pill">9</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Leadership
+                        <span class="badge badge-primary badge-pill">7</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Time Management
+                        <span class="badge badge-primary badge-pill">8</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="container mt-5" id="languages">
+        <h2>Languages</h2>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                English
+                <span class="badge badge-primary badge-pill">Read and Write - 4/5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Telugu
+                <span class="badge badge-primary badge-pill">Read and Write - 5/5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Hindi
+                <span class="badge badge-primary badge-pill">Read and Write - 3/5</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Hobbies -->
+    <div class="container mt-5" id="hobbies">
+        <h2>Hobbies</h2>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Workout
+                <span class="badge badge-primary badge-pill">5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Listening Music
+                <span class="badge badge-primary badge-pill">4</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Traveling
+                <span class="badge badge-primary badge-pill">9</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Reading
+                <span class="badge badge-primary badge-pill">8</span>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="bg-light py-3 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Chiru Sandeep Paleti</p>
+                    <p>Software Test Automation Engineer</p>
+                    <p>Ongole, AP 523001</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <p>Phone: +91 83175 05038</p>
+                    <p>Email: <a href="mailto:chirusandeep451@gmail.com">chirusandeep451@gmail.com</a> </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
