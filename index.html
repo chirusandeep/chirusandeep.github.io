@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
+        <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -85,10 +85,13 @@
                 
             </ul>
         </div>
-       <a class="btn btn-primary" href="https://github.com/chirusandeep/chirusandeep.github.io/blob/main/Paleti_Chiru_Sandeep_Software_Engineer_Resume.docx?raw=true" target="_blank" Download>Download Resume</a>
-    </nav>
+        <div class="no-scroll">
+            <a href="https://github.com/chirusandeep/chirusandeep.github.io/blob/main/Paleti_Chiru_Sandeep_Software_Engineer_Resume.docx?raw=true" class="btn btn-primary" download>Download Resume</a>
+          </div>
+          
+        </nav>
     <script>
-        const navLinks = document.querySelectorAll(".navbar a");
+        const navLinks = document.querySelectorAll(".navbar li:not(.no-scroll)");
       
         navLinks.forEach((link) => {
           link.addEventListener("click", (event) => {
@@ -215,7 +218,7 @@
             </li>
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 
-                <a href="https://www.chirusandeep.com" target="_blank"><i class="fas fa-link">Personal Website</i></a>
+                <a href="https://www.chirusandeep.github.io" target="_blank"><i class="fas fa-link">Personal Website</i></a>
             </li>
         </ul>
     </div>
